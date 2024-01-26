@@ -64,7 +64,7 @@ async function displayPromoCodeLinks() {
     try {
 				document.body.innerHTML = '';
         const estimatedTime = document.createElement('p');
-        estimatedTime.textContent = 'Estimated wait time: ' + (CodesToGenerate * Delay) / 1000 + ' Seconds';
+        estimatedTime.textContent = 'Time you had to wait: ' + (CodesToGenerate * Delay) / 1000 + ' Seconds';
         document.body.appendChild(estimatedTime);
 
         const links = await generatePromoCodeLinks();
